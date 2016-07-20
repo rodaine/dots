@@ -4,12 +4,20 @@
 # produce output or assume the shell is attached to a tty.
 # ---
 
+# Path adjustments
+path+=(/usr/local/bin)
+
+# While waiting for autocomplete, show dots
+export COMPLETION_WAITING_DOTS="true"
+
+# XDG Spec - http://standards.freedesktop.org/basedir-spec/latest/
+export XDG_CONFIG_HOME=$HOME/.config
+
 # Location of the dotfiles
 export DOTS=$HOME/.dots
 
-# Oh-My-Zsh
-export ZSH=$HOME/.oh-my-zsh # OMZ root directory
-export ZSH_THEME=rodaine    # Theme to use
+# All further ZSH loading should come from $DOTS
+export ZDOTDIR=$DOTS/.zsh
 
 # Editors
 export EDITOR=vim
@@ -20,3 +28,15 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Z - https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z
 export _Z_DATA=$DOTS/.z
+
+# Golang
+export GOPATH="$HOME/go"
+
+# History
+export HISTFILE=$DOTS/.history
+export SAVEHIST=10000
+export HISTSIZE=10000
+
+# VIM
+export MYVIMRC=$DOTS/.vim/.vimrc
+export VIMINIT='source $MYVIMRC'
