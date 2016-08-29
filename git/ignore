@@ -44,6 +44,8 @@ Thumbs.db
 *.sublime-workspace
 .idea/
 *.iml
+*.ipr
+*.iws
 .vscode/
 
 # Bundle BS #
