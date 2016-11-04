@@ -48,11 +48,12 @@ Thumbs.db
 *.iws
 .vscode/
 
-# Bundle BS #
+# Bundler BS #
 #############
 .ruby-version
-
-# Bundle BS #
-#############
 .bundle
 vendor/bundle
+
+# Diff Artifacts #
+##################
+*.orig
