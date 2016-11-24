@@ -44,3 +44,19 @@ alias gore="gore --autoimport"
 
 # Intellij
 alias ij="idea"
+
+# DOCKER
+alias db="docker build"
+alias dr="docker run"
+alias ds="docker stop"
+alias dk="docker kill"
+alias dps="docker ps"
+alias dp="docker ps"
+alias dpsa="docker ps -a"
+alias dpa="docker ps -a"
+alias drm="docker rm"
+alias drma="docker ps -aq | xargs docker rm"
+alias dl="docker logs -f"
+alias di="docker images"
+alias drmi="docker rmi"
+alias drmia="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi"
