@@ -1,0 +1,5 @@
+[submodule "hostfiles/hosts"]
+	path = hostfiles/hosts
+	url = https://github.com/StevenBlack/hosts
+  ignore = dirty
+  branch = master

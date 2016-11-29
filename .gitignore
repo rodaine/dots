@@ -9,3 +9,5 @@
 .vim/*.swp
 .vim/.netrwhist
 .vim/.viminfo
+
+hostfiles/hosts.work
