@@ -19,6 +19,7 @@ load_list=(
   setopts   # set zsh options
   functions # load custom functions
   aliases   # load custom aliases
+  homebrew  # load homebrew-specific info
   work      # load work-related custom configs
 )
 for file in $load_list; do
