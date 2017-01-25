@@ -18,3 +18,8 @@ for file in $DOTS/git/*; do
   target=$git_config_dir/$(basename $file)
   [[ ! -f $target ]] && ln -s $file $target
 done
+
+# Link curlrc
+[[ ! -f $HOME/.curlrc ]] \
+  && [[ -f $DOTS/.curlrc ]] \
+  && ln -s $DOTS/.curlrc $HOME/.curlrc

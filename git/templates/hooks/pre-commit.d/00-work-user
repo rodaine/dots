@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# ensures the correct git user for work projects
+set -e
+
+work_path=${WORK_PATH:-"/dev/null"}
+work_email=${WORK_EMAIL:-"rodaine+work@gmail.com"}
+
+if [[ $(pwd) == *"${work_path}"* ]]; then
+	if [[ $(git config --local user.email) != "${work_email}" ]]; then
+		echo "updating local config 'user.email' to ${work_email}; please try again"
+		git config --local user.email "${work_email}"
+		exit 1
+	fi
+fi
