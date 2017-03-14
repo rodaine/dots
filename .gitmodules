@@ -3,3 +3,8 @@
 	url = https://github.com/StevenBlack/hosts
   ignore = dirty
   branch = master
+[submodule ".vim/bundle/vim-bracketed-paste"]
+	path = .vim/bundle/vim-bracketed-paste
+	url = https://github.com/ConradIrwin/vim-bracketed-paste
+	ignore = dirty
+	branch = master

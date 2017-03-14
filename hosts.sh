@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 # generates host files using compiled blocklist
+set -e
 
 git submodule update --remote --no-fetch
 
