@@ -1,0 +1,64 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // WorkBench
+    "workbench.colorTheme": "Tomorrow_Night_Eighties",
+    "workbench.iconTheme": "vs-seti",
+    // Editor
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.minimap.enabled": false,
+    // External Terminal
+    "terminal.external.osxExec": "iTerm.app",
+    // Go configuration
+    "go.buildOnSave": "package",
+    "go.formatTool": "goimports",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.vetOnSave": "off",
+    "go.lintOnSave": "off",
+    "go.lintTool": "gometalinter",
+    "go.lintFlags": [
+        "--disable=golint",
+        "--disable=gotype",
+        "--disable=errcheck",
+        "--enable=goimports",
+        "--enable=lll",
+        "--enable=misspell",
+        "--enable=vetshadow",
+        "--line-length=120",
+        "--vendor"
+    ],
+    // Files
+    "files.associations": {
+        ".gitignore": "ini",
+        "*.sls": "yaml",
+        "*.tmpl": "gohtml"
+    },
+    // Git
+    "git.confirmSync": false,
+    "window.closeWhenEmpty": true,
+    "markdownlint.config": {
+        "MD026": {
+            "punctuation": ".,;:"
+        }
+    },
+    "[markdown]": {
+        "editor.wordWrap": "on"
+    },
+    "window.zoomLevel": 0,
+    "window.nativeTabs": true,
+    "workbench.editor.labelFormat": "medium",
+    "explorer.confirmDragAndDrop": false,
+    "files.insertFinalNewline": true,
+    "python.linting.mypyEnabled": true,
+    "search.location": "panel",
+    "files.trimTrailingWhitespace": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.renderWhitespace": "boundary",
+    "extensions.ignoreRecommendations": true,
+    "breadcrumbs.enabled": true
+}

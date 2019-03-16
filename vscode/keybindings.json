@@ -1,0 +1,34 @@
+// Place your key bindings in this file to overwrite the defaults
+[{
+    "key": "cmd+r",
+    "command": "go.test.file",
+    "when": "editorTextFocus"
+},{
+    "key": "shift+cmd+r",
+    "command": "go.test.cursor",
+    "when": "editorTextFocus"
+}
+,{
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus"
+},{
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+},
+{
+    "key": "f12",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+},
+{
+    "key": "f12",
+    "command": "-editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+},
+{
+    "key": "ctrl+k t",
+    "command": "haskero.insertType"
+}
+]
