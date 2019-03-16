@@ -10,15 +10,18 @@
 [ghi]
 	token = !security find-internet-password -a  -s github.com -l 'ghi token' -w
 [push]
-	default = simple
+	default    = simple
+	followTags = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean    = git-lfs clean %f
+	smudge   = git-lfs smudge %f
 	required = true
 [credential]
 	helper = osxkeychain
 [merge]
-	tool = Kaleidoscope
+	tool          = Kaleidoscope
+	ff            = only
+	conflictstyle = diff3
 [mergetool]
 	keepBackup = true
 	prompt     = false
@@ -35,3 +38,9 @@
 	insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
+[http]
+	cookiefile = /Users/croche/.dots/git/cookies
+[status]
+	showUntrackedFiles = all
+[transfer]
+	fsckobjects = true

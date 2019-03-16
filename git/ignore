@@ -57,3 +57,8 @@ vendor/bundle
 # Diff Artifacts #
 ##################
 *.orig
+
+# Py Crap #
+###########
+.mypy_cache/
+.venv/

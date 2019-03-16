@@ -4,7 +4,6 @@ plugins=(
   git
   github
   golang
-  sublime
   z
 )
 

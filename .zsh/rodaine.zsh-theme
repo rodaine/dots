@@ -1,10 +1,5 @@
 # Based on the great ys theme (http://ysmood.org/wp/2013/03/my-ys-terminal-theme/)
 
-# Machine name.
-function box_name {
-    [ -f ~/.box-name ] && cat ~/.box-name || echo $HOST
-}
-
 # Directory info.
 local current_dir='${PWD/#$HOME/~}'
 
@@ -38,15 +33,14 @@ ys_hg_prompt_info() {
 	fi
 }
 
-CAN_I_RUN_SUDO=$(sudo -n uptime 2>&1|grep "load"|wc -l)
-CHIP='$'
-if [ ${CAN_I_RUN_SUDO} -gt 0 ]; then
-	CHIP='#'
-fi
+local chip='$(prompt_chip)'
+prompt_chip() {
+	echo -n $(date '+%H:%M:%'S)
+}
 
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $
 PROMPT="
-%{$terminfo[bold]$fg[blue]%}$CHIP%{$reset_color%} \
+%{$terminfo[bold]$fg[blue]%}$chip%{$reset_color%} \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info}

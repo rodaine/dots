@@ -39,13 +39,7 @@ alias gz="git checkout master && git pull && gbda"
 alias gbd="git branch -D"
 alias gcp="git add --ignore-errors -A && git commit -m 'checkpoint'"
 
-# GORE
-alias gore="gore --autoimport"
-
-# Intellij
-alias ij="idea"
-
-# DOCKER
+# Docker
 alias db="docker build"
 alias dr="docker run"
 alias ds="docker stop"
@@ -59,5 +53,14 @@ alias drma="docker ps -aq | xargs docker rm"
 alias dl="docker logs -f"
 alias di="docker images"
 alias drmi="docker rmi"
-alias drmia="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi"
+alias drmia="docker images -q -f dangling=true | xargs -n1 docker rmi"
 alias de="docker exec"
+alias dvp="docker volume prune"
+
+# Bazel
+alias b="bazel"
+alias bb="bazel build"
+alias br="bazel run"
+alias bt="bazel test"
+alias bc="bazel clean" # NOTE: shadows GNU bc
+alias bcp="bazel clean --purge"
