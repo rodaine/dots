@@ -46,5 +46,6 @@ export SAVEHIST=10000
 export HISTSIZE=10000
 
 # VIM
-export MYVIMRC=$DOTS/vim/.vimrc
+export VIMCFG=$DOTS/vim/
+export MYVIMRC=$VIMCFG/.vimrc
 export VIMINIT='source $MYVIMRC'

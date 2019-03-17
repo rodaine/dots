@@ -1,11 +1,11 @@
 set nocompatible " VIM is less VI-like
 
 " Environment
-set directory=$DOTS/.vim,~/,/tmp
-set backupdir=$DOTS/.vim,~/,/tmp
-set viminfo+='1000,n$DOTS/.vim/.viminfo
-set runtimepath=$DOTS/.vim,$DOTS/.vim/after,$VIM,$VIMRUNTIME
-let $MYVIMRC="$DOTS/.vim/.vimrc"
+set directory=$VIMCFG,~/,/tmp
+set backupdir=$VIMCFG,~/,/tmp
+set viminfo+='1000,n$VIMCFG/.viminfo
+set runtimepath=$VIMCFG,$VIMCFG/after,$VIM,$VIMRUNTIME
+let $MYVIMRC="$VIMCFG/.vimrc"
 
 " COLORS
 colorscheme Tomorrow-Night-Eighties " the BEST color scheme

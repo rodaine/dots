@@ -6,9 +6,9 @@ zsh/work.zsh
 zsh/.cache
 zsh/.zcompdump*
 
-.vim/*.swp
-.vim/.netrwhist
-.vim/.viminfo
+vim/*.swp
+vim/.netrwhist
+vim/.viminfo
 
 hostfiles/hosts.work
 
