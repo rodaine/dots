@@ -11,6 +11,7 @@ alias h="history"
 # ls
 alias l="lsi"
 alias la="lsi"
+alias ls="lsi"
 
 # grep
 alias grep="grep --color=auto"

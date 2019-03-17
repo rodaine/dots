@@ -2,9 +2,9 @@
 .z
 .z.*
 
-.zsh/work.zsh
-.zsh/.cache
-.zsh/.zcompdump*
+zsh/work.zsh
+zsh/.cache
+zsh/.zcompdump*
 
 .vim/*.swp
 .vim/.netrwhist

@@ -1,4 +1,5 @@
 # lsi - Improved `ls`, applying helpful settings + numeric chmod values
+# requires coreutils: brew install coreutils
 
 reformat='{
   k=0;
@@ -10,5 +11,5 @@ reformat='{
 }'
 
 function lsi {
-  ls -lah --color --group-directories-first "$@" | awk $reformat
+  gls -lah --color --group-directories-first "$@" | awk $reformat
 }

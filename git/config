@@ -3,6 +3,7 @@
 [user]
 	name  = Chris Roche
 	email = rodaine+github@gmail.com
+	signingkey = F3F37DC5D98BEF21
 [core]
 	precomposeunicode = false
 [github]
@@ -44,3 +45,5 @@
 	showUntrackedFiles = all
 [transfer]
 	fsckobjects = true
+[commit]
+	gpgsign = true

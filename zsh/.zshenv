@@ -32,8 +32,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 export _Z_DATA=$XDG_DATA_HOME/z/.z
 
 # Golang
-export GIMME_SILENT_ENV=1
-source $HOME/.gimme/envs/latest.env
+source $HOME/.gimme/envs/latest.env 2>/dev/null
 export GLIDE_HOME=$XDG_CONFIG_HOME/glide
 export GOPATH=$HOME
 export PATH=$GOPATH/bin:$PATH
