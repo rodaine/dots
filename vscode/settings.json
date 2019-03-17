@@ -60,5 +60,6 @@
     "telemetry.enableCrashReporter": false,
     "editor.renderWhitespace": "boundary",
     "extensions.ignoreRecommendations": true,
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "git.enableCommitSigning": true
 }
