@@ -61,5 +61,7 @@
     "editor.renderWhitespace": "boundary",
     "extensions.ignoreRecommendations": true,
     "breadcrumbs.enabled": true,
-    "git.enableCommitSigning": true
+    "git.enableCommitSigning": true,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh"
 }
