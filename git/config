@@ -2,7 +2,7 @@
 	templatedir = ~/.dots/git/templates
 [user]
 	name  = Chris Roche
-	email = rodaine+github@gmail.com
+	email = git@rodaine.com
 	signingkey = F3F37DC5D98BEF21
 [core]
 	precomposeunicode = false
