@@ -1,0 +1,10 @@
+startup --max_idl_secs=0
+
+build --jobs=6
+build --action_env=CXX=clang++
+build --action_env=CC=clang
+build --copt=-fno-limit-debug-info
+build --announce_rc
+
+test --jobs=6
+test --test_output=streamed

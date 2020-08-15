@@ -5,6 +5,7 @@
 zsh/work.zsh
 zsh/.cache
 zsh/.zcompdump*
+zsh/.zsh_history
 
 vim/*.swp
 vim/.netrwhist

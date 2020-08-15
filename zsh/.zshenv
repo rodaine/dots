@@ -6,6 +6,7 @@
 
 # Path adjustments
 path+=(/usr/local/bin)
+export PATH="$HOME/Library/Application Support/JetBrains/Toolbox/cli:$PATH" # intellij
 
 # While waiting for autocomplete, show dots
 export COMPLETION_WAITING_DOTS="true"
@@ -37,13 +38,20 @@ export GLIDE_HOME=$XDG_CONFIG_HOME/glide
 export GOPATH=$HOME
 export PATH=$GOPATH/bin:$PATH
 
-# Load Rust Version
+# Rust
 source $HOME/.cargo/env
+
+# Ruby
+eval "$(rbenv init -)"
+
 
 # History
 export HISTFILE=$XDG_DATA_HOME/.history
-export SAVEHIST=10000
-export HISTSIZE=10000
+export SAVEHIST=100000
+export HISTSIZE=100000
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
 
 # VIM
 export VIMCFG=$DOTS/vim/

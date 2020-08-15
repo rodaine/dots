@@ -36,9 +36,16 @@ alias vi=vim
 # GIT
 alias gf="git fetch --prune --tags"
 alias gpsu="git name-rev --name-only HEAD | xargs git push --set-upstream origin $1"
-alias gz="git checkout master && git pull && gbda"
 alias gbd="git branch -D"
 alias gcp="git add --ignore-errors -A && git commit -m 'checkpoint'"
+
+function gz {
+  set -e
+  HEAD=`git symbolic-ref --short HEAD`
+	git checkout "$HEAD"
+	git pull
+  gbda
+}
 
 # Docker
 alias db="docker build"

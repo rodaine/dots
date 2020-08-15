@@ -54,7 +54,6 @@
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "python.linting.mypyEnabled": true,
-    "search.location": "panel",
     "files.trimTrailingWhitespace": true,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -63,5 +62,18 @@
     "breadcrumbs.enabled": true,
     "git.enableCommitSigning": true,
     "terminal.integrated.shell.linux": "/bin/zsh",
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "go.useLanguageServer": true,
+    "editor.columnSelection": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
