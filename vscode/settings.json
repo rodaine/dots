@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     // WorkBench
-    "workbench.colorTheme": "Tomorrow_Night_Eighties",
+    "workbench.colorTheme": "Base16 Eighties Dark",
     "workbench.iconTheme": "vs-seti",
     // Editor
     "editor.tabSize": 2,
@@ -75,5 +75,6 @@
     "C_Cpp.updateChannel": "Insiders",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    },
+    "homebrewery.enabled": true
 }

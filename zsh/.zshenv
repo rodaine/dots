@@ -4,17 +4,13 @@
 # produce output or assume the shell is attached to a tty.
 # ---
 
-# Path adjustments
-path+=(/usr/local/bin)
-export PATH="$HOME/Library/Application Support/JetBrains/Toolbox/cli:$PATH" # intellij
-
-# While waiting for autocomplete, show dots
-export COMPLETION_WAITING_DOTS="true"
-
 # XDG Spec - http://standards.freedesktop.org/basedir-spec/latest/
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
+
+# While waiting for autocomplete, show dots
+export COMPLETION_WAITING_DOTS="true"
 
 # Location of these dotfiles
 export DOTS=$XDG_CONFIG_HOME/dots
@@ -32,19 +28,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Z - https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/z
 export _Z_DATA=$XDG_DATA_HOME/z/.z
 
-# Golang
-source $HOME/.gimme/envs/latest.env 2>/dev/null
-export GLIDE_HOME=$XDG_CONFIG_HOME/glide
-export GOPATH=$HOME
-export PATH=$GOPATH/bin:$PATH
-
-# Rust
-source $HOME/.cargo/env
-
-# Ruby
-eval "$(rbenv init -)"
-
-
 # History
 export HISTFILE=$XDG_DATA_HOME/.history
 export SAVEHIST=100000
@@ -52,8 +35,3 @@ export HISTSIZE=100000
 setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
-
-# VIM
-export VIMCFG=$DOTS/vim/
-export MYVIMRC=$VIMCFG/.vimrc
-export VIMINIT='source $MYVIMRC'

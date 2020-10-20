@@ -62,3 +62,6 @@ vendor/bundle
 ###########
 .mypy_cache/
 .venv/
+
+# K8S Crap *
+*.yaml-e

@@ -3,7 +3,7 @@
 [user]
 	name  = Chris Roche
 	email = github@rodaine.com
-	signingkey = F3F37DC5D98BEF21
+	signingkey = F3F37DC5D98BEF21 
 [core]
 	precomposeunicode = false
 [github]
@@ -19,26 +19,10 @@
 	required = true
 [credential]
 	helper = osxkeychain
-[merge]
-	tool          = Kaleidoscope
-	ff            = only
-	conflictstyle = diff3
-[mergetool]
-	keepBackup = true
-	prompt     = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[difftool "Kaleidoscope"]
-				cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
 [http]
-	cookiefile = /Users/croche/.config/dots/git/cookies
+	cookiefile = ~/.config/dots/git/cookies
 [status]
 	showUntrackedFiles = all
 [transfer]
@@ -49,7 +33,5 @@
 	version = 2
 [url "git@github.com:"]
 	insteadof = https://github.com/
-[url "git@github.com:lyft/idlcode-go"]
-	insteadof = https://github.com/lyft/idlcode-go
 [pull]
 	ff = only
